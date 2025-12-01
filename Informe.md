@@ -205,11 +205,11 @@ docker compose up -d --build
 ```
 Este comando:
 
-Construye la imagen optimizada del backend (multi-stage)
-Levanta PostgreSQL con volumen persistente
-Levanta pgAdmin
-Conecta automáticamente la app a la base de datos
-Carga los 10 usuarios de prueba desde data.sql
+- Construye la imagen optimizada del backend (multi-stage)
+- Levanta PostgreSQL con volumen persistente
+- Levanta pgAdmin
+- Conecta automáticamente la app a la base de datos
+- Carga los 10 usuarios de prueba desde data.sql
 <p align="center"> <img src="images/figura5.png" alt="Figura 1. Dockerfile" width="800px"> </p>
 
 ### Paso 4: Verificar funcionamiento
