@@ -78,7 +78,7 @@ Para realizar esta práctica, el estudiante debe tener claros los siguientes tem
 git clone https://github.com/maguaman2/tendencias-mar22-security.git
 cd tendencias-mar22-security
 ```
-<p align="center"> <img src="images/figura1.png" alt="Figura 1. Dockerfile" width="800px"> </p>
+<p align="center"> <img src="images/figura1.png" width="800px"> </p>
 
 ### Paso 2: Crear los archivos de configuración (en la raíz del proyecto)
 Se crearon los siguientes archivos:
@@ -101,7 +101,7 @@ SPRING_DATASOURCE_PASSWORD=yop123
 SPRING_JPA_HIBERNATE_DDL_AUTO=update
 SERVER_PORT=8080
 ```
-<p align="center"> <img src="images/figura2.png" alt="Figura 1. Dockerfile" width="800px"> </p>
+<p align="center"> <img src="images/figura2.png" width="800px"> </p>
 
 **2. Dockerfile (multi-stage optimizado)**
 
@@ -137,7 +137,7 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=60s --retries=3 \
 
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 ```
-<p align="center"> <img src="images/figura3.png" alt="Figura 1. Dockerfile" width="800px"> </p>
+<p align="center"> <img src="images/figura3.png" width="800px"> </p>
 
 **3. docker-compose.yml**
 ``` bash 
@@ -197,7 +197,7 @@ networks:
   security-network:
     driver: bridge
 ```
-<p align="center"> <img src="images/figura4.png" alt="Figura 1. Dockerfile" width="800px"> </p>
+<p align="center"> <img src="images/figura4.png" width="800px"> </p>
 
 ### Paso 3: Levantar todo el entorno con un solo comando
 ```bash
@@ -210,7 +210,7 @@ Este comando:
 - Levanta pgAdmin
 - Conecta automáticamente la app a la base de datos
 - Carga los 10 usuarios de prueba desde data.sql
-<p align="center"> <img src="images/figura5.png" alt="Figura 1. Dockerfile" width="800px"> </p>
+<p align="center"> <img src="images/figura5.png" width="800px"> </p>
 
 ### Paso 4: Verificar funcionamiento
 Endpoint público con datos reales
